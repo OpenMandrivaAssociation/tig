@@ -29,14 +29,12 @@ with the log message, diffstat, and the diff.
 
 Using it as a pager, it will display input from stdin and colorize it.
 
-
 %prep
 %setup -q
 
-
 %build
 %configure
-make %{?_smp_mflags} all doc-man doc-html
+%make all doc-man doc-html
 
 #Convert to unix line endings
 sed -i -e 's/\r//' *.html
@@ -44,9 +42,7 @@ sed -i -e 's/\r//' *.html
 
 %install
 rm -rf %{buildroot}
-make install install-doc-man DESTDIR=%{buildroot} prefix=%{_prefix} \
-    mandir=%{_mandir}
-
+%makeinstall_std install-doc-man 
 
 %clean
 rm -rf %{buildroot}
@@ -55,10 +51,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc COPYING README SITES BUGS manual.txt *.html
-
 %{_bindir}/tig
-
 %{_mandir}/man1/tig.1*
 %{_mandir}/man5/tigrc.5*
-
-
