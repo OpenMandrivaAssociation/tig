@@ -1,8 +1,8 @@
 %define name    tig
-%define version 0.11
+%define version 0.12.1
 %define release %mkrel 1
 
-Name:           %{name}  
+Name:           %{name}
 Version:        %{version}
 Release:        %{release}
 Summary:        Text-mode interface for the git revision control system
@@ -42,7 +42,7 @@ sed -i -e 's/\r//' *.html
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std install-doc-man 
+%makeinstall_std install-doc-man
 
 %clean
 rm -rf %{buildroot}
