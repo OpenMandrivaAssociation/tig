@@ -1,5 +1,5 @@
 %define name    tig
-%define version 0.13
+%define version 0.14.1
 %define release %mkrel 1
 
 Name:           %{name}
