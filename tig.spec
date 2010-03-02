@@ -1,6 +1,6 @@
 %define name    tig
-%define version 0.14.1
-%define release %mkrel 2
+%define version 0.15
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -33,7 +33,7 @@ Using it as a pager, it will display input from stdin and colorize it.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make all doc-man doc-html
 
 #Convert to unix line endings
@@ -54,3 +54,4 @@ rm -rf %{buildroot}
 %{_bindir}/tig
 %{_mandir}/man1/tig.1*
 %{_mandir}/man5/tigrc.5*
+%{_mandir}/man7/tigmanual.7.lzma
