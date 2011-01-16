@@ -1,6 +1,6 @@
 %define name    tig
-%define version 0.15
-%define release %mkrel 2
+%define version 0.16.2
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -54,4 +54,4 @@ rm -rf %{buildroot}
 %{_bindir}/tig
 %{_mandir}/man1/tig.1*
 %{_mandir}/man5/tigrc.5*
-%{_mandir}/man7/tigmanual.7.lzma
+%{_mandir}/man7/tigmanual.7.*
