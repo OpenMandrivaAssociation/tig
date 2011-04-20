@@ -1,5 +1,5 @@
 %define name    tig
-%define version 0.16.2
+%define version 0.17
 %define release %mkrel 1
 
 Name:           %{name}
@@ -52,6 +52,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc COPYING README SITES BUGS manual.txt *.html
 %{_bindir}/tig
+%{_bindir}/test-graph
 %{_mandir}/man1/tig.1*
 %{_mandir}/man5/tigrc.5*
 %{_mandir}/man7/tigmanual.7.*
