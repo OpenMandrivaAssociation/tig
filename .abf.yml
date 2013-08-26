@@ -1,2 +1,4 @@
+removed_sources:
+  tig-0.17.tar.gz: a48e9d08d96f8b49b65cf86602112c7c8e1a4804
 sources:
-  "tig-0.17.tar.gz": a48e9d08d96f8b49b65cf86602112c7c8e1a4804
+  tig-1.2.1.tar.gz: cbd948f51c784ea245db5df32e922669f0a24805
