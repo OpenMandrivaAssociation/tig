@@ -1,6 +1,6 @@
 Name:           tig
 Version:        1.2.1
-Release:        1
+Release:        2
 
 Group:          Development/Other
 License:        GPLv2+
