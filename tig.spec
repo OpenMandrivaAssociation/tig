@@ -4,7 +4,7 @@ Release:        2
 
 Group:          Development/Other
 License:        GPLv2+
-URL:            http://jonas.nitro.dk/tig
+URL:            https://jonas.nitro.dk/tig
 Source0:        http://jonas.nitro.dk/tig/releases/%{name}-%{version}.tar.gz
 
 BuildRequires:  git-core
