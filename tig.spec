@@ -7,6 +7,11 @@ License:        GPLv2+
 URL:            https://jonas.nitro.dk/tig
 Source0:        http://jonas.nitro.dk/tig/releases/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  git-core
 BuildRequires:  ncurses-devel
 BuildRequires:  xmlto
